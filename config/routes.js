@@ -32,6 +32,15 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'get /foo/bar/baz': {
+    view: 'hi'
+  },
+
+  'get /foo/bar/baz/bing': {
+    view: 'pages/dashboard'
+  },
+
+
   'get /*': {
     view: 'homepage',
     skipAssets: true
