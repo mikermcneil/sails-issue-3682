@@ -41,6 +41,15 @@ module.exports.routes = {
   },
 
 
+  'get /images/arbitrary/foo/*': {
+    view: 'pages/dashboard'
+  },
+
+  'get /images/arbitrary/*': {
+    view: 'hi',
+    skipAssets: true
+  },
+
   'get /*': {
     view: 'homepage',
     skipAssets: true
