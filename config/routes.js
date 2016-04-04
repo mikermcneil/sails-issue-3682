@@ -40,6 +40,14 @@ module.exports.routes = {
     view: 'pages/dashboard'
   },
 
+  'get /sample': {
+    view: 'pages.and.stuff/more.stuff'
+  },
+
+  'get /sample2': function (req,res) {
+    return res.view('pages.and.stuff/more.stuff');
+  },
+
 
   'get /images/arbitrary/foo/*': {
     view: 'pages/dashboard'
